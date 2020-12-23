@@ -1,0 +1,212 @@
+@import 'reset'
+
+$light-pink: #fff9fb
+$pink: #e5cbd3
+$dark-pink: #c28c9c
+$default-spacing: 20px
+
+$main-text: #3d3d3d
+$secondary-text: #8d7c82
+
+.container
+  max-width: 1000px
+  width: 100%
+  margin: 0 auto
+
+.header
+  position: relative
+  padding-top: $default-spacing
+  padding-bottom: $default-spacing
+  width: 100%
+  box-shadow: 0 0 10px $pink
+  &__inner
+    display: flex
+    justify-content: space-around
+
+.nav
+  font-size: 1.2em
+  font-weight: 700
+  display: flex
+  align-items: center
+  margin: 0 auto
+  &__list
+    display: flex
+    align-items: center
+  &__item
+    margin-right: $default-spacing * 2
+  &__link
+    color: $dark-pink
+    &:hover
+      opacity: 0.6
+
+.main
+  background-color: $light-pink
+  
+.info
+  padding-top: $default-spacing * 2
+  display: flex
+  &__quote
+    color: $secondary-text
+    font-size: 0.85em
+    font-style: italic
+    margin-left: $default-spacing
+  &__avatar
+    width: 25%
+    border-radius: $default-spacing
+  &__text
+    margin-left: $default-spacing
+    &__bio__name
+      color: $main-text
+    &__bio__prof
+      color: $secondary-text
+    &__contacts
+      display: flex
+      margin-top: $default-spacing * 2
+      &__titles
+        color: $main-text
+      &__values
+        color: $secondary-text
+        margin-left: $default-spacing
+    &__social__networks
+      display: flex
+      margin-top: $default-spacing * 2
+      &__link
+        color: $dark-pink
+        padding-right: $default-spacing
+        &:hover
+          opacity: 0.6
+
+.article
+  margin-top: $default-spacing * 2
+  &__title
+    font-size: 2.2em
+    color: $main-text
+    text-decoration: underline
+    margin-bottom: $default-spacing / 2
+  &__subtitle
+    font-size: 1.6em
+    color: $main-text
+  &__text
+    font-size: 1.5em
+    color: $secondary-text
+    margin-bottom: $default-spacing / 2
+
+.articles__dich__content
+  display: flex
+  &__code
+    margin-left: $default-spacing * 2
+
+.articles__projects__content
+  display: flex
+  align-items: center
+  &__item
+    width: 900px
+    margin-left: 10px
+    display: flex
+    padding-bottom: $default-spacing
+    &__image
+      max-height: 700px
+  &__list
+    display: flex
+    overflow-x: auto
+    scroll-behavior: smooth
+  &__button
+    height: 150px
+    padding-left: 20px
+    padding-right: 20px
+    background: url(../../img/arrow.png)
+    background-size: 40px 100%      
+
+.right__arrow
+  margin-left: 10px
+  transform: rotate(180deg)
+
+.popup
+  border-radius: $default-spacing
+  background-color: $pink
+  padding: $default-spacing
+  margin-right: $default-spacing
+  margin-bottom: $default-spacing
+  
+.popup--pos--right
+  position: fixed
+  right: 0
+  bottom: 0
+
+.popup--pos--left
+  position: fixed
+  left: 0
+  bottom: 0
+
+.popup--contacts
+  @extend .popup--pos--right
+  text-align: right
+  display: none
+  &__content
+    @extend .popup
+    text-align: left
+    display: flex
+    margin-top: -20px
+  &__button--cross
+    position: relative
+    margin-right: 10px
+    border-radius: $default-spacing
+    background-color: $dark-pink
+    padding: $default-spacing / 2
+
+.popup--button--right
+  @extend .popup--pos--right
+  @extend .popup
+  font-size: 1.2em
+
+.popup--chat
+  @extend .popup--pos--left
+  margin-left: $default-spacing
+  text-align: right
+  display: none
+  &__content
+    @extend .popup
+    text-align: left
+    display: block
+    margin-top: -20px
+  &__button--cross
+    position: relative
+    margin-right: 10px
+    border-radius: $default-spacing
+    background-color: $dark-pink
+    padding: $default-spacing / 2
+  &__input
+    border-radius: 5px
+    font-size: 1.2em
+    padding: 5px
+  &__send--button
+    border-radius: 5px
+    font-size: 1.2em
+    padding: 5px
+  &__list
+    height: 500px
+    background-color: white
+    border-radius: 5px
+    margin-bottom: 20px
+    overflow-y: auto
+  &__item
+    display: flex
+    justify-content: space-between
+    border-radius: 5px
+    background: $pink
+    margin: 10px
+    padding: 5px
+    max-width: 235px
+    &__close
+      background: $pink
+    &__text
+      display: inline-block
+      word-wrap: break-word
+      width: 200px
+
+.popup--button--left
+  @extend .popup--pos--left
+  @extend .popup
+  display: block
+  margin-left: $default-spacing
+  font-size: 1.2em

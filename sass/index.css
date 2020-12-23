@@ -1,0 +1,154 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    margin: auto;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 24pt;
+    font-style: normal;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18pt;
+    font-style: normal;
+    margin: 0;
+}
+
+p {
+    font-size: 14pt;
+    color: #5c5c5c;
+}
+
+.gray-text {
+    color: #5c5c5c;
+}
+
+#quote-author {
+    font-style: italic;
+    margin-left: 20px;
+}
+
+#quote {
+    margin-left: 20px;
+}
+
+#bio {
+    display: flex;
+}
+
+#info {
+    display: flex;
+    overflow: auto;
+    padding: 20px;
+}
+
+#avatar {
+    width: 25%;
+    border-radius: 20px;
+    float: left;
+    margin-right: 50px;
+}
+
+#contacts {
+    display: flex;
+    margin-top: 50px;
+}
+
+#social-networks {
+    margin-top: 50px;
+    display: flex;
+}
+
+.social-link {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+#titles {
+    margin-right: 40px;
+    float: left;
+}
+
+.gray-block {
+    background-color: #f1f1f1;
+}
+
+article {
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+article h1 {
+    padding-bottom: 20px;
+}
+
+article p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#dich-div {
+    display: flex;
+}
+
+#code {
+    font-family: "Fira Code";
+}
+
+#android-animal {
+    font-family: "Fira Mono";
+    font-size: 10pt;
+    margin-right: 50px;
+    float: left;
+}
+
+#ranobe-reader {
+    display: flex;
+}
+
+#rr-image {
+    height: 700px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.nav-item {
+    float: left;
+    padding-right: 20px;
+}
+
+.nav-list {
+    font-weight: bold;
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #5c5c5c;
+}
+
+nav {
+    background-color: #bbbbbb;
+    padding: 20px 0 20px 0;
+    overflow: hidden;
+}
