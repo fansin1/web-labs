@@ -39,9 +39,21 @@ function quicksortExample() {
         items.push(randomInteger(1, 100000))
     }
     
+    console.log(Math.min(...items))
+    console.log(Math.max(...items))
+
     console.log(items)
     quicksort(items, 0, items.length - 1)
     console.log(items)
+
+    let half = Math.floor(items.length / 2);
+    let median
+    if (items.length % 2)
+        median = items[half];
+
+    median = (items[half - 1] + items[half]) / 2.0;
+    
+    console.log("Median " + median)
 }
 
 function tags() {

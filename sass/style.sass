@@ -11,7 +11,7 @@ $secondary-text: #8d7c82
 .container
   max-width: 1000px
   width: 100%
-  margin: 0 auto
+  margin: auto 20px auto 20px
 
 .header
   position: relative
@@ -45,15 +45,30 @@ $secondary-text: #8d7c82
 .info
   padding-top: $default-spacing * 2
   display: flex
+  @media screen and (max-width: 640px)
+        display: block
+  &__adap
+      @media screen and (max-width: 1200px)
+        display: block
+      display: flex
   &__quote
+    @media screen and (max-width: 640px)
+        margin-left: 0px
+        margin-right: 20px
+        margin-top: 20px
     color: $secondary-text
     font-size: 0.85em
     font-style: italic
     margin-left: $default-spacing
   &__avatar
+    min-width: 300px
     width: 25%
     border-radius: $default-spacing
+    @media screen and (max-width: 1200px)
+        margin-bottom: 20px
   &__text
+    @media screen and (max-width: 1200px)
+        margin-left: 0
     margin-left: $default-spacing
     &__bio__name
       color: $main-text
